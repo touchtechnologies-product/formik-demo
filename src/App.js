@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div className='container'>
+        <h1>REGISTER</h1>
+        <form>
+          <div className='form-group'>
+            <label htmlFor='name'>Email address</label>
+            <input type='text' id='name' placeholder='Enter name' />
+            <span>Test error</span>
+          </div>
+          <div className='form-group'>
+            <label htmlFor='first_name'>First name</label>
+            <input type='text' id='first_name' placeholder='Enter First name' />
+          </div>
+          <div className='form-group'>
+            <label htmlFor='last_name'>Last name</label>
+            <input type='text' id='last_name' placeholder='Enter Last name' />
+          </div>
+          <div className='form-group'>
+            <label htmlFor='password'>Password</label>
+            <input type='password' id='password' placeholder='Password' />
+          </div>
+          <div className='form-group'>
+            <label htmlFor='confirmPassword'>Confirm Password</label>
+            <input
+              type='password'
+              id='confirmPassword'
+              placeholder='Enter Confirm Password'
+            />
+          </div>
+          <button type='submit' className='btn' style={{ width: '100%' }}>
+            SUBMIT
+          </button>
+        </form>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+* {
+  --primary: #2176bd;
+  --secondary: #c492ef;
+
+  --error: #e74c3c;
+  --warning: #f1820f;
+  --success: #2ecc71;
+
+  --white: #ffffff;
+  --black: #313744;
+
+  --gray: #a0a0a0;
+  --light-gray: #d7d7d7;
+  --gray-blue: #c4d7e2;
+
+  --main-bg: #f2f5f4;
+  --primary-text-color: var(--black);
+
+  --gradient: linear-gradient(137deg, #2176bd -7%, #008ad6 115%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+body {
   background-color: #282c34;
-  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+label {
+  color: #fff;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+span {
+  margin-top: 7px;
+  color: var(--warning);
+}
+
+input {
+  outline: none;
+  border-radius: 8px;
+  padding: 10px;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border-radius: 8px;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  background: var(--gradient);
+}
+
+.container {
+  width: 400px;
+}
+
+.form-group {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.App {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  height: 100vh;
 }
